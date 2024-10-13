@@ -1,8 +1,0 @@
-FROM golang:alpine
-
-# Basuc Go Setup
-WORKDIR /home/dev/
-RUN apk add --no-cache go git
-
-# Check if Go is installed
-CMD ["sh", "-c", "go version"]

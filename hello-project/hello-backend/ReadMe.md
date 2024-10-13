@@ -1,13 +1,11 @@
-# Odpalanie Obrazu
-Obraz na podstawie docker File, budujemy obraz:
-"docker build -t hello-backend" 
--t flaga do nazwania obrazu
-
-
-docker run -it hello-backend sh
- sh - odpalenie połączenia shell
-docker run -it --rm -v /mnt/c/Users/adamk/Desktop/Dev:/home/dev hello-backend sh
- it - interactive
- rm - usuń kontener
- v  - montowanie wolumentu 
- sh - połączenie shell
+# To Do
+## Short Term
+- [x] Create GitHub Repo
+- [x] Move local work to GitHub to unlock tracking changes and get experience with Git
+- [ ] Get back to GoLang Docs and find requirements for local work in containers
+- [ ] Organize local setup
+ - [ ] Check if current setup makes it easy to commmit to GitHub
+## Long Term 
+- [ ] Decide if work on 
+ - [ ] Windows + Desktop stack 
+ - [ ] WSL2 + CLI stack  

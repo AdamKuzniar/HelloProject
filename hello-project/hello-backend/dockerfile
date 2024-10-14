@@ -1,8 +1,8 @@
 FROM golang:alpine
 
-# Basuc Go Setup
+# Basic Go Setup
 WORKDIR /home/dev/
-RUN apk add --no-cache go git
+# Attempt to make container interactive
 
-# Check if Go is installed
-CMD ["sh", "-c", "go version"]
+RUN apk add --no-cache go git
+RUN echo "go version && echo username have fun in this container"

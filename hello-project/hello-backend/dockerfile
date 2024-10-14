@@ -1,0 +1,8 @@
+FROM golang:alpine
+
+# Basic Go Setup
+WORKDIR /home/dev/
+# Attempt to make container interactive
+
+RUN apk add --no-cache go git
+RUN echo "go version && echo username have fun in this container"

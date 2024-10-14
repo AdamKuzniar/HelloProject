@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -it --name my-golang  -v /home/adam/dev/hello-project/hello-backend:/home/dev
+docker run -it -v /home/adam/dev/hello-project/hello-backend:/home/dev my_go_app

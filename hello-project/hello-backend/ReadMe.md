@@ -9,3 +9,9 @@
 - [ ] Decide if work on 
  - [ ] Windows + Desktop stack 
  - [ ] WSL2 + CLI stack  
+
+
+# How to tips
+1. Use WSL for container management
+2. rundocker.sh is a simple shell script/command that allows to run contaniner in interactive mode.
+ - my issues were with lack of naming docker container at the end

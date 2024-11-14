@@ -28,7 +28,7 @@
 - copy contents of SSH public key (its default key directory and name, might need adjustments)
   - `cat ~/.ssh/id_ed25519.pub`
 
-2. Commiting code in dirty way 
+2. Commiting code in dirty way  
 **Assumptions:** sufficient privelages to the repository  
 **Prerequisites:** valid SSH authenthication to repository, changes in files  
 - add your changes to "local staging" 

@@ -68,10 +68,5 @@
 mkdir -p ~/.docker/cli-plugins 
 curl -SL https://github.com/docker/buildx/releases/latest/download/buildx-v0.18.0.linux-amd64 -o ~/.docker/cli-plugins/docker-buildx
 ```
-3. Turn on BuildKit (not sure if necessary) by setting environment variable
-` export DOCKER_BUILDKIT=1`
-
 ### Command to run containers with mounted volumes  
 `docker run -v hostpath:containerpath -it container-name`
-
-

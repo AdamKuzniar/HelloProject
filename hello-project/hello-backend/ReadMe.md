@@ -15,7 +15,7 @@
 2. rundocker.sh is a simple shell script/command that allows to run contaniner in interactive mode.
  - my issues were with lack of naming docker container at the end
 ## GitHub Tips
-1. Cloning repository  
+### Cloning repository  
 **Assumptions:** Work on Windows Desktop and use WSL for more smooth container management  
 **Prerequisites:** Installed WSL, Created GitHub account, Existing repository  
 - Launch WSL and update your WSL system 
@@ -30,7 +30,7 @@
 - copy contents of SSH public key (its default key directory and name, might need adjustments)
   - `cat ~/.ssh/id_ed25519.pub`
 
-2. Commiting code in "dirty way" - directly to main branch  
+### Commiting code in "dirty way" - directly to main branch  
 **Assumptions:** sufficient privelages to the repository  
 **Prerequisites:** valid SSH authenthication to repository, changes in files  
 - add your changes to "local staging" and commit changes locally  
@@ -40,7 +40,7 @@
   ``` 
 - push changes to GitHub - main is the default branch name
   - `git push origin main`
-3. Commiting code in "cleaner way" - directly to main branch  
+### Commiting code in "cleaner way" - directly to main branch  
 **Assumptions:** sufficient privelages to the repository  
 **Prerequisites:** valid SSH authenthication to repository, changes in files  
 - create new branch and switch to it
@@ -56,4 +56,17 @@
 - push changes to GitHub 
   - `git push origin branch-name`
 - Use UI on GitHub to Create Pull Request, select your new branch
-- Merge PR after it's created
+- Merge PR after it's created  
+
+## Docker
+### Installing docker on WSL
+1. Install docker engine 
+`sudo apt-get install -y docker.io`
+2. Install buildx, create catalog for plugins and download proper binary
+```
+mkdir -p ~/.docker/cli-plugins 
+curl -SL https://github.com/docker/buildx/releases/latest/download/buildx-v0.18.0.linux-amd64 -o ~/.docker/cli-plugins/docker-buildx
+```
+
+3. Turn on BuildKit (not sure if necessary) by setting environment variable
+` export DOCKER_BUILDKIT=1`

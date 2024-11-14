@@ -2,13 +2,14 @@
 ## Short Term
 - [x] Create GitHub Repo
 - [x] Move local work to GitHub to unlock tracking changes and get experience with Git
-- [ ] Get back to GoLang Docs and find requirements for local work in containers
-- [ ] Organize local setup
-  - [ ] Check if current setup makes it easy to commmit to GitHub
+- [x] Get back to GoLang Docs and find requirements for local work in containers
+  - Go is needed and included in my base docker file golang:alpine
+- [x] Organize local setup
+  - [] Check if current setup makes it easy to commmit to GitHub
 ## Long Term 
-- [ ] Decide if work on 
+- [x] Decide if work on 
   - [ ] Windows + Desktop stack 
-  - [ ] WSL2 + CLI stack  
+  - [x] WSL2 + CLI stack  
 
 # How to tips
 1. Use WSL for container management
@@ -67,6 +68,5 @@
 mkdir -p ~/.docker/cli-plugins 
 curl -SL https://github.com/docker/buildx/releases/latest/download/buildx-v0.18.0.linux-amd64 -o ~/.docker/cli-plugins/docker-buildx
 ```
-
-3. Turn on BuildKit (not sure if necessary) by setting environment variable
-` export DOCKER_BUILDKIT=1`
+### Command to run containers with mounted volumes  
+`docker run -v hostpath:containerpath -it container-name`
